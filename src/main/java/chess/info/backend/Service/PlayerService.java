@@ -20,4 +20,8 @@ public class PlayerService {
 		return playerRepository.save(speler);
 	}
 
+	public Player getPlayerById(long spelerid) {
+		return playerRepository.findById(spelerid).get();
+	}
+
 }

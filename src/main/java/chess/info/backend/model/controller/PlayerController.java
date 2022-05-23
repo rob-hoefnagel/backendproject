@@ -53,6 +53,10 @@ public class PlayerController {
 	return playerservice.geefAlleSpelers();
 	
 	}
+	@GetMapping("verkrijgSpelerById/{spelerid}")
+	public Player verkrijgSpeler(@PathVariable("spelerid") int spelerid) {
+		return playerservice.getPlayerById(spelerid);
+	}
 		
 }
 
