@@ -37,6 +37,12 @@ public class UnitController {
 
 	}
 	
+	@PostMapping("editUnit")
+	public void editUnit(@RequestBody Unit unit) {
+		unitservice.slaUnitOp(unit);
+
+	}
+	
 	@GetMapping("totalUnits")
 	public List<Unit> unitLijst() {
 	return unitservice.geefAlleUnits();
