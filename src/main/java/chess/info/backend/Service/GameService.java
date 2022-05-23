@@ -18,4 +18,9 @@ public class GameService {
 		return gr.findAll();
 	}
 
+	public void createSpel(Game spel) {
+		// TODO Auto-generated method stub
+		gr.save(spel);
+	}
+
 }
