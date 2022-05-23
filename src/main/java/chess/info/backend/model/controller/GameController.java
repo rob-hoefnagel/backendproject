@@ -22,9 +22,9 @@ public class GameController {
 	public List<Game> alleGames(){
 		return gs.getAlleGames();
 	}
-	@PostMapping("creategame")
-	public void createGame(@RequestBody Game spel) {
-		gs.createSpel(spel);
+	@PostMapping("creategame/{spelerid}")
+	public void createGame(@RequestBody Game spel, @PathVariable int spelerid) {
+		gs.createSpel(spel, spelerid);
 	}
 	@GetMapping("getGame/{spelid}")
 	public Game getGameById(@PathVariable("spelid") int spelid) {
