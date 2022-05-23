@@ -55,5 +55,4 @@ public class Unit {
 		this.type = type;
 	}
 	
-
 }

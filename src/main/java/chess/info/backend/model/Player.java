@@ -19,7 +19,7 @@ public class Player {
 	
 	@ManyToMany
 	private List<Game> game;
-private int turnOrder;
+	private int turnOrder;
 	//private Account account;
 	public long getId() {
 		return id;
