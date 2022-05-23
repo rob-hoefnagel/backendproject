@@ -23,4 +23,9 @@ public class GameService {
 		gr.save(spel);
 	}
 
+	public Game getGameById(long spelid) {
+		// TODO Auto-generated method stub
+		return gr.findById(spelid).get();
+	}
+
 }

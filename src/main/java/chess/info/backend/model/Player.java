@@ -17,8 +17,7 @@ public class Player {
 	private String nickname;
 //	private int turnOrder;
 	
-	@ManyToMany
-	private List<Game> game;
+	
 	private int turnOrder;
 	//private Account account;
 	public long getId() {
